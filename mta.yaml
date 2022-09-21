@@ -62,6 +62,11 @@ modules:
       - name: app-api
         properties:
           url: ${default-url}
+  - name: myHANAAppJava-cds-srv
+    type: nodejs
+    requires:
+      - name: myHANAAppJava-cds-auth
+      - name: myHANAAppJava-auth
 
 resources:
   - name: myHANAAppJava-db
